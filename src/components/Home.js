@@ -354,9 +354,8 @@ function Home() {
               textDecoration: 'none',
               position: 'absolute',
               right: -600,
-              top: 0,
-              bottom: 0,
-              width: '80px'
+              bottom: 20,
+              zIndex: 1
             }}
           >
             <Button 
