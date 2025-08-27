@@ -304,7 +304,7 @@ function Admin() {
             ))}
           </Box>
         </Box>
-      )}
+      </Stack>
 
       {/* Project Dialog */}
       <Dialog 
@@ -425,43 +425,8 @@ function Admin() {
             </Button>
           </DialogActions>
         </Dialog>
-
-        {/* Delete Confirmation Dialog */}
-        <Dialog
-          open={deleteConfirmOpen}
-          onClose={() => setDeleteConfirmOpen(false)}
-        >
-          <DialogTitle>Delete Project</DialogTitle>
-          <DialogContent>
-            <Typography>
-              Are you sure you want to delete "{projectToDelete?.project_name}"? This action cannot be undone.
-            </Typography>
-          </DialogContent>
-          <DialogActions>
-            <Button onClick={() => setDeleteConfirmOpen(false)}>Cancel</Button>
-            <Button
-              onClick={async () => {
-                try {
-                  setIsLoading(true);
-                  await deleteProject(projectToDelete.id);
-                  setDeleteConfirmOpen(false);
-                  setProjectToDelete(null);
-                } catch (err) {
-                  setError('Failed to delete project: ' + err.message);
-                } finally {
-                  setIsLoading(false);
-                }
-              }}
-              color="error"
-              disabled={isLoading}
-            >
-              Delete
-            </Button>
-          </DialogActions>
-        </Dialog>
-      </Stack>
-    </Container>
-  );
-}
+      </Container>
+    );
+  }
 
 export default Admin;
