@@ -1,8 +1,8 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "public",
-  "framework": "create-react-app",
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+  "builds": [
+    { "src": "package.json", "use": "@vercel/static-build", "config": {} }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/dist/$1" }
   ]
 }
