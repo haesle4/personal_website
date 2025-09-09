@@ -56,7 +56,7 @@ function Home() {
             Electrical Engineering at Stanford University
           </Typography>
           <Typography variant="body1" sx={{ fontSize: '1.2rem', color: 'rgba(0, 0, 0, 0.7)', mb: 3 }}>
-            Hi! I'm Keane, a second year EE student studying at Stanford University.
+            Hi! I'm Keane, a second year EE student with a focus in robotics and controls.
           </Typography>
           <Typography variant="body1" sx={{ fontSize: '1.2rem', color: 'rgba(0, 0, 0, 0.7)', mb: 4 }}>
             I'm interested in Electrical Engineering and Machine Learning; and I'm eager to use my experience with software development, data processing, and system architecture to build robots.
@@ -212,6 +212,61 @@ function Home() {
         </Grid>
       </Box>
 
+      {/* Education Section */}
+      <Box sx={{ mb: 8 }}>
+        <Typography variant="h4" sx={{ color: 'black', mb: 4 }}>Education</Typography>
+        <Box sx={{ display: 'flex', gap: 4 }}>
+          {/* Stanford */}
+          <Box sx={{ 
+            flex: 1,
+            p: 3,
+            bgcolor: '#FDFBF7',
+            border: '2px solid black',
+            boxShadow: '4px 4px 0px black'
+          }}>
+            <Typography variant="h5" sx={{ color: '#8C1515', fontWeight: 600, mb: 2 }}>
+              Stanford University
+            </Typography>
+            <Typography sx={{ color: 'rgba(0, 0, 0, 0.7)', mb: 2 }}>
+              Class of 2028
+            </Typography>
+            <Box component="ul" sx={{ m: 0, pl: 2, mb: 3 }}>
+              <Typography component="li" sx={{ color: 'rgba(0, 0, 0, 0.7)', mb: 1 }}>GPA: 3.7</Typography>
+            </Box>
+            <Typography variant="h6" sx={{ color: 'black', mb: 2 }}>Key Coursework</Typography>
+            <Box component="ul" sx={{ m: 0, pl: 2 }}>
+              <Typography component="li" sx={{ color: 'rgba(0, 0, 0, 0.7)' }}>EE101A  - Circuits</Typography>
+              <Typography component="li" sx={{ color: 'rgba(0, 0, 0, 0.7)' }}>CS106B  - Programming Abstractions</Typography>
+              <Typography component="li" sx={{ color: 'rgba(0, 0, 0, 0.7)' }}>MATH53  - Differential Equations</Typography>
+              <Typography component="li" sx={{ color: 'rgba(0, 0, 0, 0.7)' }}>ENGR108 - Introduction to Matrix Methods</Typography>
+
+            </Box>
+          </Box>
+
+          {/* High School */}
+          <Box sx={{ 
+            flex: 1,
+            p: 3,
+            bgcolor: '#FDFBF7',
+            border: '2px solid black',
+            boxShadow: '4px 4px 0px black'
+          }}>
+            <Typography variant="h5" sx={{ color: 'black', fontWeight: 600, mb: 2 }}>
+              Sandpoint High School
+            </Typography>
+            <Typography sx={{ color: 'rgba(0, 0, 0, 0.7)', mb: 2 }}>
+              Class of 2024
+            </Typography>
+            <Box component="ul" sx={{ m: 0, pl: 2 }}>
+              <Typography component="li" sx={{ color: 'rgba(0, 0, 0, 0.7)', mb: 1 }}>GPA: 3.97</Typography>
+              <Typography component="li" sx={{ color: 'rgba(0, 0, 0, 0.7)', mb: 1 }}>SAT: 1540</Typography>
+              <Typography component="li" sx={{ color: 'rgba(0, 0, 0, 0.7)', mb: 1 }}>Ranked 1st out of 258 students</Typography>
+              <Typography component="li" sx={{ color: 'rgba(0, 0, 0, 0.7)' }}>National Merit Scholar Finalist</Typography>
+            </Box>
+          </Box>
+        </Box>
+      </Box>
+
       {/* Skills Section */}
       <Box sx={{ display: 'flex', gap: 6, mb: 8 }}>
         {/* Photo */}
@@ -296,33 +351,6 @@ function Home() {
             </Grid>
           </Box>
 
-          {/* Languages */}
-          <Box>
-            <Typography variant="h6" sx={{ color: 'black', mb: 2, fontWeight: 600 }}>
-              Languages
-            </Typography>
-            <Grid container spacing={1.5}>
-              {['English'].map((skill) => (
-                <Grid item key={skill}>
-                  <Box sx={{ 
-                    bgcolor: '#FDFBF7',
-                    border: '2px solid black',
-                    boxShadow: '2px 2px 0px black',
-                    px: 2,
-                    py: 1,
-                    borderRadius: 1,
-                    '&:hover': {
-                      transform: 'translate(-1px, -1px)',
-                      boxShadow: '3px 3px 0px black',
-                    },
-                    transition: 'all 0.2s ease-in-out'
-                  }}>
-                    <Typography sx={{ color: 'black' }}>{skill}</Typography>
-                  </Box>
-                </Grid>
-              ))}
-            </Grid>
-          </Box>
         </Box>
       </Box>
 
