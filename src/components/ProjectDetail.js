@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import placeholderImage from '../images/placeholder.jpg';
 import { useParams, useNavigate } from 'react-router-dom';
 import { 
   Box, 
@@ -109,7 +108,7 @@ function ProjectDetail() {
           justifyContent: 'center'
         }}>
           <img
-            src={project.images?.[currentImageIndex] || project.image || placeholderImage}
+            src={project.images?.[currentImageIndex] || project.image}
             alt={`${project.title} - Image ${currentImageIndex + 1}`}
             style={{ 
               width: '100%',
