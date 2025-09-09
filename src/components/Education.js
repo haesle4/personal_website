@@ -101,10 +101,12 @@ function Education() {
                 Class of 2024
               </Typography>
             </Box>
-            <Typography sx={{ color: 'rgba(0, 0, 0, 0.7)' }}>
-              GPA: 3.97
-              SAT: 1540
-            </Typography>
+            <Box component="ul" sx={{ color: 'rgba(0, 0, 0, 0.7)', m: 0, pl: 2 }}>
+              <Typography component="li" sx={{ mb: 1 }}>GPA: 3.97</Typography>
+              <Typography component="li" sx={{ mb: 1 }}>SAT: 1540</Typography>
+              <Typography component="li" sx={{ mb: 1 }}>Ranked 1st out of 258 students</Typography>
+              <Typography component="li">National Merit Scholar Finalist</Typography>
+            </Box>
           </Box>
         </CardContent>
       </Card>
