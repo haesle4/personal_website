@@ -1,4 +1,10 @@
 import React from 'react';
+import selfieImage from '../images/Selfie.jpg';
+import epochImage from '../images/Epoch_International_Building2.jpg';
+import boutonImage from '../images/Bouton_Detection_Image.jpg';
+import eegImage from '../images/First_Page_EEG_Project.jpg';
+import pcbImage from '../images/PCB_First_Board_Check.jpg';
+import codingImage from '../images/Person_Coding.jpg';
 import { Box, Typography, Grid, Card, CardContent, Button } from '@mui/material';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { useProjects } from '../context/ProjectContext';
@@ -34,7 +40,7 @@ function Home() {
           justifyContent: 'center'
         }}>
           <img 
-            src="/Images/Selfie.jpg" 
+            src={selfieImage} 
             alt="Keane Haesle"
             style={{ 
               width: '100%', 
@@ -133,7 +139,7 @@ function Home() {
           p: 2
         }}>
           <img 
-            src="/Images/Epoch_International_Building2.jpg"
+            src={epochImage}
             alt="Epoch Building"
             style={{ 
               width: '100%', 
@@ -185,9 +191,9 @@ function Home() {
                   }
                 }}>
                   <img 
-                    src={index === 0 ? "/Images/Bouton_Detection_Image.jpg" :
-                         index === 1 ? "/Images/First_Page_EEG_Project.jpg" :
-                         "/Images/PCB_First_Board_Check.jpg"}
+                    src={index === 0 ? boutonImage :
+                         index === 1 ? eegImage :
+                         pcbImage}
                     alt={project.title}
                     style={{ 
                       width: '100%', 
@@ -221,7 +227,7 @@ function Home() {
           p: 2
         }}>
           <img 
-            src="/Images/Person_Coding.jpg"
+            src={codingImage}
             alt="Coding Skills"
             style={{ 
               width: '100%', 

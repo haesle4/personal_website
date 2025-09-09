@@ -1,4 +1,5 @@
 import React from 'react';
+import placeholderImage from '../images/placeholder.jpg';
 import { 
   Box, 
   Typography, 
@@ -86,7 +87,7 @@ function Projects() {
                     }
                   }}>
                     <img
-                      src={project.image || '/Images/placeholder.jpg'}
+                      src={project.image || placeholderImage}
                       alt={project.title}
                       style={{ 
                         width: '100%', 
@@ -159,7 +160,7 @@ function Projects() {
                     }
                   }}>
                     <img
-                      src={project.image || '/Images/placeholder.jpg'}
+                      src={project.image || placeholderImage}
                       alt={project.title}
                       style={{ 
                         width: '100%', 
