@@ -39,9 +39,9 @@ function Education() {
               Fall 2026
             </Typography>
             <Box component="ul" sx={{ m: 0, pl: 2 }}>
-              <Typography component="li" sx={{ color: 'rgba(0, 0, 0, 0.7)' }}>PHYSICS61 - Mechanics and Special Relativity</Typography>
+              <Typography component="li" sx={{ color: 'rgba(0, 0, 0, 0.7)' }}>CS107 - Computer Organization and Systems</Typography>
               <Typography component="li" sx={{ color: 'rgba(0, 0, 0, 0.7)' }}>EE101A - Circuits I</Typography>
-              <Typography component="li" sx={{ color: 'rgba(0, 0, 0, 0.7)' }}>ENGR108 - Introduction to Matrix Methods</Typography>
+              <Typography component="li" sx={{ color: 'rgba(0, 0, 0, 0.7)' }}>CS109 - Probability for Computer Scientists</Typography>
               <Typography component="li" sx={{ color: 'rgba(0, 0, 0, 0.7)' }}>CHINLANG1 - First Year Modern Chinese Quarter I</Typography>
             </Box>
           </Box>
