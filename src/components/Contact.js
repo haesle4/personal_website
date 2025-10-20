@@ -47,7 +47,7 @@ function Contact() {
               Email
             </Typography>
             <Typography variant="body1" sx={{ color: 'black' }}>
-              khaesle@gmail.com
+              khaesle@stanford.edu
             </Typography>
           </Box>
 

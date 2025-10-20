@@ -60,32 +60,40 @@ export function ProjectProvider({ children }) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Fetch projects from Supabase
+  // Fetch projects from Supabase with fallback to local data
   const fetchProjects = async () => {
     try {
+      // First try to fetch from Supabase
       const { data, error } = await supabase
         .from('Personal Website Projects')
         .select('*');
 
       if (error) throw error;
 
-      // Transform the data to match our project structure
-      const transformedProjects = data.map(project => ({
-        id: project.id,
-        title: project.project_name,
-        description: project.project_description,
-        fullDescription: project.project_description,
-        date: project.date,
-        image: project.image_url,
-        technologies: project.techniques ? project.techniques.split(',').map(tech => tech.trim()) : [],
-        isFeatured: project.featured === 'TRUE'
-      }));
-
-      setProjects(transformedProjects);
+      if (data && data.length > 0) {
+        // Transform the data to match our project structure
+        const transformedProjects = data.map(project => ({
+          id: project.id,
+          title: project.project_name,
+          description: project.project_description,
+          fullDescription: project.project_description,
+          date: project.date,
+          image: project.image_url,
+          technologies: project.techniques ? project.techniques.split(',').map(tech => tech.trim()) : [],
+          isFeatured: project.featured === 'TRUE'
+        }));
+        setProjects(transformedProjects);
+      } else {
+        // If no data from Supabase, use local data
+        console.log('No data from Supabase, using local project data');
+        setProjects(initialProjects);
+      }
       setError(null);
     } catch (err) {
-      console.error('Error fetching projects:', err);
-      setError(err.message);
+      console.error('Error fetching projects from Supabase, using local data instead:', err);
+      // Fall back to using the local data
+      setProjects(initialProjects);
+      setError('Could not connect to the server. Showing local project data.');
     } finally {
       setLoading(false);
     }

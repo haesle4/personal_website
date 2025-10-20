@@ -1,5 +1,5 @@
 import React from 'react';
-import selfieImage from '../images/Selfie.jpg';
+const linkedInPhoto = '/Images/LinkedIn Photo Smile 2.jpg';
 import epochImage from '../images/Epoch_International_Building2.jpg';
 import boutonImage from '../images/Bouton_Detection_Image.jpg';
 import eegImage from '../images/First_Page_EEG_Project.jpg';
@@ -33,19 +33,21 @@ function Home() {
           flexShrink: 0,
           border: '2px solid black',
           boxShadow: '4px 4px 0px black',
-          width: 400,
-          height: 400,
+          width: '100%',
+          maxWidth: 400,
+          aspectRatio: '1',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center'
         }}>
           <img 
-            src={selfieImage} 
+            src={linkedInPhoto} 
             alt="Keane Haesle"
             style={{ 
               width: '100%', 
               height: '100%',
-              objectFit: 'contain'
+              objectFit: 'cover',
+              borderRadius: '4px'
             }}
           />
         </Box>
