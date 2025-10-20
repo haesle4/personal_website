@@ -1,5 +1,5 @@
 import React from 'react';
-const linkedInPhoto = '/Images/LinkedIn Photo Smile 2.jpg';
+import linkedInPhoto from '../images/LinkedIn Photo Smile 2.jpg';
 import epochImage from '../images/Epoch_International_Building2.jpg';
 import boutonImage from '../images/Bouton_Detection_Image.jpg';
 import eegImage from '../images/First_Page_EEG_Project.jpg';
