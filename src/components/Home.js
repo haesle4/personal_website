@@ -239,8 +239,9 @@ function Home() {
             <Box component="ul" sx={{ m: 0, pl: 2 }}>
               <Typography component="li" sx={{ color: 'rgba(0, 0, 0, 0.7)' }}>EE101A  - Circuits</Typography>
               <Typography component="li" sx={{ color: 'rgba(0, 0, 0, 0.7)' }}>CS106B  - Programming Abstractions</Typography>
+              <Typography component="li" sx={{ color: 'rgba(0, 0, 0, 0.7)' }}>CS107 - Computer Organization and Fixes</Typography>
               <Typography component="li" sx={{ color: 'rgba(0, 0, 0, 0.7)' }}>MATH53  - Differential Equations</Typography>
-              <Typography component="li" sx={{ color: 'rgba(0, 0, 0, 0.7)' }}>ENGR108 - Introduction to Matrix Methods</Typography>
+
 
             </Box>
           </Box>
