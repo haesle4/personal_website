@@ -31,7 +31,8 @@ function Education() {
             GPA: 3.7
           </Typography>
           
-          <Typography variant="h6" sx={{ color: 'black', mb: 2 }}>Coursework</Typography>          {/* Winter 2026 */}
+          <Typography variant="h6" sx={{ color: 'black', mb: 2 }}>Coursework</Typography>
+          {/* Winter 2026 */}
           <Box sx={{ mb: 3 }}>
             <Typography sx={{ color: 'black', fontWeight: 600, mb: 1 }}>
               Winter 2026
@@ -42,9 +43,7 @@ function Education() {
               <Typography component="li" sx={{ color: 'rgba(0, 0, 0, 0.7)' }}>CHINLANG2 - Second Quarter Chinese</Typography>
               <Typography component="li" sx={{ color: 'rgba(0, 0, 0, 0.7)' }}>SURG52Q - Writing Requirement 2</Typography>
             </Box>
-          
-
-          
+          </Box>
           {/* Fall 2025 */}
           <Box sx={{ mb: 3 }}>
             <Typography sx={{ color: 'black', fontWeight: 600, mb: 1 }}>
@@ -57,7 +56,6 @@ function Education() {
               <Typography component="li" sx={{ color: 'rgba(0, 0, 0, 0.7)' }}>CHINLANG1 - First Year Modern Chinese Quarter I</Typography>
             </Box>
           </Box>
-</Box>
           {/* Spring 2025 */}
           <Box sx={{ mb: 3 }}>
             <Typography sx={{ color: 'black', fontWeight: 600, mb: 1 }}>
