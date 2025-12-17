@@ -40,7 +40,7 @@ function Education() {
             <Box component="ul" sx={{ m: 0, pl: 2 }}>
               <Typography component="li" sx={{ color: 'rgba(0, 0, 0, 0.7)' }}>CS229 - Machine Learning</Typography>
               <Typography component="li" sx={{ color: 'rgba(0, 0, 0, 0.7)' }}>EE102a - Signals and Systems I</Typography>
-              <Typography component="li" sx={{ color: 'rgba(0, 0, 0, 0.7)' }}>CHINLANG2 - Second Quarter Chinese</Typography>
+              <Typography component="li" sx={{ color: 'rgba(0, 0, 0, 0.7)' }}>CHINLANG2 - First Year Modern Chinese Quarter 2</Typography>
               <Typography component="li" sx={{ color: 'rgba(0, 0, 0, 0.7)' }}>SURG52Q - Writing Requirement 2</Typography>
             </Box>
           </Box>
