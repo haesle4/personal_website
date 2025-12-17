@@ -28,7 +28,7 @@ function Education() {
             </Typography>
           </Box>
           <Typography sx={{ color: 'black', mb: 3 }}>
-            GPA: 3.7
+            GPA: 3.8
           </Typography>
           
           <Typography variant="h6" sx={{ color: 'black', mb: 2 }}>Coursework</Typography>
@@ -44,6 +44,7 @@ function Education() {
               <Typography component="li" sx={{ color: 'rgba(0, 0, 0, 0.7)' }}>SURG52Q - Writing Requirement 2</Typography>
             </Box>
           </Box>
+
           {/* Fall 2025 */}
           <Box sx={{ mb: 3 }}>
             <Typography sx={{ color: 'black', fontWeight: 600, mb: 1 }}>
@@ -77,7 +78,7 @@ function Education() {
               <Typography component="li" sx={{ color: 'rgba(0, 0, 0, 0.7)' }}>BIO102 - Introduction to Neuroscience</Typography>
               <Typography component="li" sx={{ color: 'rgba(0, 0, 0, 0.7)' }}>CS106B - Programming Abstractions</Typography>
               <Typography component="li" sx={{ color: 'rgba(0, 0, 0, 0.7)' }}>PATH51 - Human Anatomy</Typography>
-              <Typography component="li" sx={{ color: 'rgba(0, 0, 0, 0.7)' }}>PWR1MO - Writing and Rhetoric</Typography>
+              <Typography component="li" sx={{ color: 'rgba(0, 0, 0, 0.7)' }}>PWR1MO - Writing Requirement 1</Typography>
             </Box>
           </Box>
 
